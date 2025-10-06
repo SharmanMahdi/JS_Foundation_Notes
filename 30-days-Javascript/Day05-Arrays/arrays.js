@@ -28,6 +28,7 @@
 9. Log the length of the array to the console.
 10. merge the array with another array ['Matcha', 'Earl Grey'] and log the result to the console.
 
+
 */
  let Teaflavors = "Green Tea, Black Tea, Oolong Tea, Herbal Tea".split(", ");
 //1. console.log(Teaflavors);
@@ -65,3 +66,26 @@ console.log(allTeaFlavors2);
 
 
 // End of Challenge
+
+// Example 02:
+// You have an array named 'cityBucketList' containing '"New York', 'Tokyo', 'Edmonton', 'London"'.
+// Check if 'London' is in the array and store the result in a variable named 'isLondonInList'. Log the variable to the console.
+let cityBucketList = ["new york", "tokyo", "edmonton", "London"];
+let isLondonInList = cityBucketList.includes("London");
+console.log(isLondonInList); // true
+// The includes() method is used to check if an array contains a specific element. It returns true if the element is found, and false otherwise.
+
+// Example 03:
+/* Create an array on your name "Sharma mahdi" and perform the following operations: 
+1. create space between each letter of your name in one line,
+2. give number each later,
+3. Reverse it and log it to the console.
+
+*/
+let myName = "Sharma mahdi";
+let nameArray = myName.split(""); // split() method is used to split a string into an array of substrings.
+console.log(nameArray); // ['S', 'h', 'a', 'r', 'm', 'a', ' ', 'm', 'a', 'h', 'd', 'i']
+let nameWithSpaces = nameArray.join(" "); // join() method is used to join all elements of an array into a string.
+console.log(nameWithSpaces); // S h a r m a   m a h d i
+let nameWithNumbers = nameArray.map((letter, index) => `${index + 1}:${letter}`); // map() method is used to create a new array by calling a function on every element of the array.
+console.log(nameWithNumbers);
